@@ -27,7 +27,8 @@ const TabIcon = ({ focused, icon, title }: any) => {
   );
 };
 
-const _layout = () => {
+// export default function TabsLayout() {
+const TabsLayout = () => {
   return (
     <Tabs
       screenOptions={{
@@ -62,6 +63,7 @@ const _layout = () => {
           ),
         }}
       />
+
       <Tabs.Screen
         name="search"
         options={{
@@ -83,6 +85,7 @@ const _layout = () => {
           ),
         }}
       />
+
       <Tabs.Screen
         name="profile"
         options={{
@@ -97,6 +100,4 @@ const _layout = () => {
   );
 };
 
-export default _layout;
-
-const styles = StyleSheet.create({});
+export default TabsLayout;
